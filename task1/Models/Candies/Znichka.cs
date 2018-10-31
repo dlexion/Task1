@@ -8,7 +8,7 @@ using task1.Enums;
 
 namespace task1.Models.Candies
 {
-    public class Znichka : ChcolateCandyWithWaffel
+    public class Znichka : ChocolateCandyWithWaffel
     {
         public override string Name => "Znichka";
 
@@ -17,5 +17,7 @@ namespace task1.Models.Candies
         public override int SugarWeight => 52;
 
         public override TypeOfChocolate TypeOfChocolate => TypeOfChocolate.Milk;
+
+        public override int B => 4;
     }
 }

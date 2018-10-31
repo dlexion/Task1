@@ -17,6 +17,6 @@ namespace task1.Models.Candies
 
         public override int SugarWeight => 49;
 
-        
+        public override int B => 6;
     }
 }

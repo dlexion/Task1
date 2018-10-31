@@ -32,5 +32,18 @@ namespace task1.Models.Candies
         {
             return true;
         }
+
+        #region additional task
+        private int A { get; } = 5;
+        public abstract int B { get; }
+
+        public int Calorie
+        {
+            get
+            {
+                return A* B;
+            }
+        }
+        #endregion
     }
 }

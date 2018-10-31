@@ -54,7 +54,7 @@
     <Compile Include="Models\BakersConfectionery.cs" />
     <Compile Include="Models\Candies\Candy.cs" />
     <Compile Include="Models\Waffels\CaramelCircleWaffel.cs" />
-    <Compile Include="Models\Candies\ChcolateCandyWithWaffel.cs" />
+    <Compile Include="Models\Candies\ChocolateCandyWithWaffel.cs" />
     <Compile Include="Models\Candies\ChocolateCandy.cs" />
     <Compile Include="Models\Candies\ChocolateCandyWithLiquor.cs" />
     <Compile Include="Models\Waffels\CircleWaffel.cs" />

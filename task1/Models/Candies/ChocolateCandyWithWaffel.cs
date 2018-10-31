@@ -8,7 +8,7 @@ using task1.Enums;
 
 namespace task1.Models.Candies
 {
-    public abstract class ChcolateCandyWithWaffel : ChocolateCandy
+    public abstract class ChocolateCandyWithWaffel : ChocolateCandy
     {
         public sealed override Filling Filling
         {
