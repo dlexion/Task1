@@ -11,7 +11,8 @@ namespace task1.Models.Zephyrs
 {
     public abstract class Zephyr : SugarConfectionery, IGlazed
     {
-        public abstract string Color { get; }
+        public abstract Color Color { get; }
+        
         public abstract GlazeType GlazeType { get; }
 
         public abstract bool IsGlazed();

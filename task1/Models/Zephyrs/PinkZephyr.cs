@@ -9,7 +9,7 @@ namespace task1.Models.Zephyrs
 {
     public abstract class PinkZephyr : Zephyr
     {
-        public sealed override string Color => "Pink";
+        public sealed override Color Color => Color.Pink;
 
         public override GlazeType GlazeType => GlazeType.None;
 
