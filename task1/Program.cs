@@ -28,7 +28,7 @@ namespace task1
             gift.Add(sweet3);
             gift.Add(sweet4);
 
-            gift.OrderByDesceding(x => x.Name);
+            gift.OrderByDescending(x => x.Name);
 
             ChocolateCandy candy1 = new Znichka();
             ChocolateCandy candy2 = new Stolichnyye();

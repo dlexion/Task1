@@ -41,7 +41,7 @@ namespace task1.Models
             _confectioneries = _confectioneries.OrderBy(comparer).ToList();
         }
 
-        public void OrderByDesceding<TResult>(Func<IConfectionery, TResult> comparer)
+        public void OrderByDescending<TResult>(Func<IConfectionery, TResult> comparer)
         {
             _confectioneries = _confectioneries.OrderByDescending(comparer).ToList();
         }
