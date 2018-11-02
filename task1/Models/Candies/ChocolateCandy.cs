@@ -12,21 +12,9 @@ namespace task1.Models.Candies
     {
         public abstract TypeOfChocolate TypeOfChocolate { get; }
 
-        public sealed override GlazeType GlazeType
-        {
-            get
-            {
-                return GlazeType.Chocolate;
-            }
-        }
+        public sealed override GlazeType GlazeType => GlazeType.Chocolate;
 
-        public virtual Filling Filling
-        {
-            get
-            {
-                return Filling.None;
-            }
-        }
+        public virtual Filling Filling => Filling.None;
 
         public sealed override bool IsGlazed()
         {
@@ -34,14 +22,16 @@ namespace task1.Models.Candies
         }
 
         #region additional task
+        
         private int A { get; } = 5;
+        
         public abstract int B { get; }
 
         public int Calorie
         {
             get
             {
-                return A* B;
+                return A * B;
             }
         }
         #endregion

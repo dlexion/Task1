@@ -10,8 +10,8 @@ namespace task1.Interfaces
 {
     public interface IGlazed
     {
-        bool IsGlazed();
-
         GlazeType GlazeType { get; }
+
+        bool IsGlazed();
     }
 }

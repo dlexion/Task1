@@ -10,12 +10,6 @@ namespace task1.Models.Candies
 {
     public abstract class ChocolateCandyWithWaffel : ChocolateCandy
     {
-        public sealed override Filling Filling
-        {
-            get
-            {
-                return Filling.Waffle;
-            }
-        }
+        public sealed override Filling Filling => Filling.Waffle;
     }
 }

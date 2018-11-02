@@ -9,7 +9,9 @@ namespace task1.Models.Zephyrs
     public class Zemlyanichnyy : PinkZephyr
     {
         public override string Name => "Zemlyanichnyy";
+
         public override int Weight => 10;
+
         public override int SugarWeight => 58;
     }
 }

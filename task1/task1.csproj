@@ -43,11 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums\Color.cs" />
     <Compile Include="Enums\Form.cs" />
     <Compile Include="Enums\GlazeType.cs" />
     <Compile Include="Enums\TypeOfChocolate.cs" />
     <Compile Include="Enums\Filling.cs" />
-    <Compile Include="Enums\Taste.cs" />
     <Compile Include="Interfaces\IGift.cs" />
     <Compile Include="Interfaces\IConfectionery.cs" />
     <Compile Include="Interfaces\IGlazed.cs" />

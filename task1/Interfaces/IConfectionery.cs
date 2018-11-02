@@ -9,7 +9,9 @@ namespace task1.Interfaces
     public interface IConfectionery
     {
         string Name { get; }
+        
         int Weight { get; }
+        
         int SugarWeight { get; }
     }
 }
