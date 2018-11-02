@@ -14,6 +14,6 @@ namespace task1.Models
 
         public abstract int Weight { get;  }
 
-        public abstract int SugarWeight { get; }
+        public abstract int SugarWeightPer100Grams { get; }
     }
 }

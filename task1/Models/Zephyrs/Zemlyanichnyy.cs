@@ -12,6 +12,6 @@ namespace task1.Models.Zephyrs
 
         public override int Weight => 10;
 
-        public override int SugarWeight => 58;
+        public override int SugarWeightPer100Grams => 58;
     }
 }

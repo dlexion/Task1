@@ -14,6 +14,6 @@ namespace task1.Models.Waffels
 
         public override string FlourGrade => "Best";
 
-        public override int SugarWeight => 43;
+        public override int SugarWeightPer100Grams => 43;
     }
 }

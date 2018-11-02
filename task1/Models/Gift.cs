@@ -31,9 +31,9 @@ namespace task1.Models
             _confectioneries.Add(confectionery);
         }
 
-        public List<IConfectionery> FindBySugarWeight(uint minSugarWeight, uint maxSugarWeight)
+        public List<IConfectionery> FindBySugarWeight(int minSugarWeight, int maxSugarWeight)
         {
-            return _confectioneries.Where(confectionery => confectionery.SugarWeight >= minSugarWeight && confectionery.SugarWeight <= maxSugarWeight).ToList();
+            return _confectioneries.Where(confectionery => confectionery.SugarWeightPer100Grams >= minSugarWeight && confectionery.SugarWeightPer100Grams <= maxSugarWeight).ToList();
         }
 
         public void OrderBy<TResult>(Func<IConfectionery, TResult> comparer)

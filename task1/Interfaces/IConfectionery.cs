@@ -12,6 +12,6 @@ namespace task1.Interfaces
         
         int Weight { get; }
         
-        int SugarWeight { get; }
+        int SugarWeightPer100Grams { get; }
     }
 }

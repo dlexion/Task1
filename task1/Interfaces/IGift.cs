@@ -12,7 +12,7 @@ namespace task1.Interfaces
 
         void Add(IConfectionery sweet);
 
-        List<IConfectionery> FindBySugarWeight(uint minSugarWeight, uint maxSugarWeight);
+        List<IConfectionery> FindBySugarWeight(int minSugarWeight, int maxSugarWeight);
 
         void OrderBy<TResult>(Func<IConfectionery, TResult> comparer);
 
