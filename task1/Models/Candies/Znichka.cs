@@ -17,7 +17,5 @@ namespace task1.Models.Candies
         public override int SugarWeightPer100Grams => 52;
 
         public override TypeOfChocolate TypeOfChocolate => TypeOfChocolate.Milk;
-
-        public override int B => 4;
     }
 }

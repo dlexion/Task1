@@ -29,11 +29,6 @@ namespace task1
             gift.Add(sweet4);
 
             gift.OrderByDescending(x => x.Name);
-
-            ChocolateCandy candy1 = new Znichka();
-            ChocolateCandy candy2 = new Stolichnyye();
-            Console.WriteLine(candy1.Calorie);
-            Console.WriteLine(candy2.Calorie);
         }
     }
 }
