@@ -10,7 +10,13 @@ namespace task1.Interfaces
     {
         int Weight { get; }
 
-        void Add(IConfectionery sweet);
+        void Add(IConfectionery confectionery);
+
+        void AddRange(IEnumerable<IConfectionery> confectioneries);
+
+        void Remove(IConfectionery confectionery);
+
+        void Clear();
 
         IEnumerable<IConfectionery> FindBySugarWeight(int minSugarWeight, int maxSugarWeight);
 

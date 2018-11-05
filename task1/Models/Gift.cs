@@ -31,6 +31,21 @@ namespace task1.Models
             _confectioneries.Add(confectionery);
         }
 
+        public void AddRange(IEnumerable<IConfectionery> confectioneries)
+        {
+            _confectioneries.AddRange(confectioneries);
+        }
+
+        public void Remove(IConfectionery confectionery)
+        {
+            _confectioneries.Remove(confectionery);
+        }
+
+        public void Clear()
+        {
+            _confectioneries.Clear();
+        }
+
         public IEnumerable<IConfectionery> FindBySugarWeight(int minSugarWeight, int maxSugarWeight)
         {
             return _confectioneries.Where(confectionery => confectionery.SugarWeightPer100Grams >= minSugarWeight && confectionery.SugarWeightPer100Grams <= maxSugarWeight).ToList();
