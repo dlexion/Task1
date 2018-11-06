@@ -63,12 +63,14 @@ namespace task1.Models
 
         public override string ToString()
         {
-            string info = string.Empty;
-            foreach (var confectionery in _confectioneries)
+            StringBuilder info = new StringBuilder();
+
+            foreach(var item in _confectioneries)
             {
-                info += confectionery.ToString();
+                info.Append(item.ToString() + "\n");
             }
-            return info;
+
+            return info.ToString(); 
         }
     }
 }

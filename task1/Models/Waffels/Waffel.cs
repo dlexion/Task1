@@ -11,5 +11,10 @@ namespace task1.Models.Waffels
     public abstract class Waffel : BakersConfectionery
     {
         public abstract Form Form { get; }
+
+        public override string ToString()
+        {
+            return $"{base.ToString()} Form: {Form}\t";
+        }
     }
 }

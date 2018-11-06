@@ -20,5 +20,10 @@ namespace task1.Models.Candies
         {
             return true;
         }
+
+        public override string ToString()
+        {
+            return $"{base.ToString()} Filling: {Filling}";
+        }
     }
 }

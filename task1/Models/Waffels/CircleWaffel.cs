@@ -13,5 +13,10 @@ namespace task1.Models.Waffels
         public sealed override Form Form => Form.Circle;
 
         public virtual Filling Filling => Filling.None;
+
+        public override string ToString()
+        {
+            return $"{base.ToString()} ";
+        }
     }
 }

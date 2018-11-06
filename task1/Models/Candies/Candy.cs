@@ -14,5 +14,10 @@ namespace task1.Models.Candies
         public abstract GlazeType GlazeType { get; }
 
         public abstract bool IsGlazed();
+
+        public override string ToString()
+        {
+            return $"{base.ToString()} Glaze type: {GlazeType}\t";
+        }
     }
 }

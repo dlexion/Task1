@@ -17,18 +17,38 @@ namespace task1
     {
         static void Main(string[] args)
         {
-            IConfectionery sweet1 = new Znichka();
-            IConfectionery sweet2 = new Stolichnyye();
-            IConfectionery sweet3 = new StroopWaffel();
-            IConfectionery sweet4 = new Zemlyanichnyy();
+            IConfectionery confectionery1 = new Znichka();
+            IConfectionery confectionery2 = new Stolichnyye();
+            IConfectionery confectionery3 = new StroopWaffel();
+            IConfectionery confectionery4 = new Zemlyanichnyy();
 
             IGift gift = new Gift();
-            gift.Add(sweet1);
-            gift.Add(sweet2);
-            gift.Add(sweet3);
-            gift.Add(sweet4);
+            gift.Add(confectionery1);
+            gift.Add(confectionery2);
+            gift.Add(confectionery3);
+            gift.Add(confectionery4);
+
+            Console.WriteLine("Gift:");
+            Console.WriteLine(gift);
+
+            Console.WriteLine("Total weight:");
+            Console.WriteLine(gift.Weight);
+            Console.WriteLine();
+
 
             gift.OrderByDescending(x => x.Name);
+            Console.WriteLine("Gift after sorting by name:");
+            Console.WriteLine(gift);
+
+            int min = 40;
+            int max = 50;
+            var result = gift.FindBySugarWeight(min, max);
+            IGift resultGift = new Gift();
+            resultGift.AddRange(result);
+            Console.WriteLine($"Confectioneries with sugar weight between {min} and {max}");
+            Console.WriteLine(resultGift);
+
+            Console.ReadKey();
         }
     }
 }
